@@ -1,0 +1,41 @@
+---
+server:
+  port: 8090
+spring:
+  application:
+    name: eureka-server-spring-cloud
+
+---
+server:
+  port: 8082
+spring:
+  profiles: eureka1
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/,http://localhost:8083/
+---
+server:
+  port: 8083
+spring:
+  profiles: eureka2
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/,http://localhost:8084/eureka/
+
+---
+server:
+  port: 8084
+spring:
+  profiles: eureka3
+eureka:
+  instance:
+    hostname: eureka3
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/,http://localhost:8083/eureka/
