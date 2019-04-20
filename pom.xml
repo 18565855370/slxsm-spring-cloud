@@ -5,16 +5,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.slxsm.cloud</groupId>
-  <artifactId>spring-cloud-demo</artifactId>
+  <artifactId>slxsm-spring-cloud</artifactId>
   <version>1.0-SNAPSHOT</version>
+  
   <modules>
-    <module>trance-client-A</module>
-    <module>trance-server-A</module>
     <module>eureka-server-spring-cloud</module>
   </modules>
   <packaging>pom</packaging>
 
-  <name>spring-cloud-demo</name>
+  <name>slxsm-spring-cloud</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
